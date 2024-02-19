@@ -1,3 +1,4 @@
+Circuito Tinkercad:
 // C++ code
 //
 void setup()
@@ -67,3 +68,5 @@ void loop()
   digitalWrite(5, LOW);
   delay(3000);//VERMELHO e AMARELO
   }
+
+Arduino(com serial)
