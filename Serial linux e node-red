@@ -1,3 +1,5 @@
+Código:
+
 const int buttonPin = 2;
 int buttonState = 0;
 
@@ -23,3 +25,13 @@ Serial.println("LIGADO");
 
 }
 }
+Script:
+
+while:
+do
+
+sudo minicom -b 9600 -o -D /dev/ttyACM0 > nodered.txt
+
+sleep 5
+
+done
