@@ -79,3 +79,28 @@ Inicio
 
 
 Fimalgoritmo
+========================================================================================================================================
+
+Algoritmo "semnome"
+
+Var
+// Seção de Declarações das variáveis 
+   idade: inteiro
+   resultado: inteiro
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  ESCREVAL ("Qual sua idade?")
+  LEIA (idade)
+  ESCREVAL (" ")
+  
+SE (idade < 18) ENTAO
+      ESCREVAL ("Idade: ", idade)
+      ESCREVAL ("Status: Menor de idade")
+SENAO
+      ESCREVAL ("Idade: ", idade)
+      ESCREVAL ("Status: Maior de idade")
+FIMSE
+
+Fimalgoritmo
+====================================================================================================================================================
