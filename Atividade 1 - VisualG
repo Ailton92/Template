@@ -28,7 +28,7 @@ Inicio
 
 
 Fimalgoritmo
-
+==============================================================================================================================
 Calculadora de soma:
 
 Algoritmo "semnome"
@@ -49,6 +49,33 @@ Inicio
   soma <- num1 + num2
   ESCREVAL (" ")
   ESCREVAL (" O resultado é ", soma)
+
+
+Fimalgoritmo
+===============================================================================================================================================
+Calculadora de média:
+
+Algoritmo "semnome"
+
+Var
+// Seção de Declarações das variáveis 
+   num1: inteiro
+   num2: inteiro
+   num3: inteiro
+   media: real
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+  ESCREVAL ("Digite o 1° número:")
+  LEIA (num1)
+  ESCREVAL (" ")
+  ESCREVAL ("Digite o 2° número:")
+  LEIA (num2)
+  ESCREVAL (" ")
+  ESCREVAL ("Digite o 3° número:")
+  LEIA (num3)
+  media <- (num1 + num2 + num3) /3
+  ESCREVAL (" ")
+  ESCREVAL (" A média é", media)
 
 
 Fimalgoritmo
