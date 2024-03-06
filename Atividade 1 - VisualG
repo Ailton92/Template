@@ -8,16 +8,25 @@ Var
 // Seção de Declarações das variáveis 
    nome: caractere
    sobrenome: caractere
+   idade: inteiro
+   ano_nascimento: inteiro
+   ano_atual: inteiro
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
   ESCREVAL ("Digite seu nome: ")
-  ESCREVAL (" ")
   LEIA (nome)
   ESCREVAL (" ")
   ESCREVAL ("Digite seu sobrenome: ")
-  ESCREVAL (" ")
   LEIA (sobrenome)
   ESCREVAL (" ")
-  ESCREVAL ("Eae ", nome , " ", sobrenome, ", como vai?")
+  ESCREVAL ("Quantos anos você tem?")
+  LEIA (idade)
+  ESCREVAL (" ")
+  ESCREVAL ("Qual o ano atual?")
+  LEIA (ano_atual)
+  ESCREVAL (" ")
+  ano_nascimento <- ano_atual - idade
+  ESCREVAL ("Então você é ", nome, " ", sobrenome, ", nascido em", ano_nascimento, "?")
+
 
 Fimalgoritmo
