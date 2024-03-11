@@ -3,14 +3,14 @@ Nome, sobrenome e ano de nascimento:
 Algoritmo "semnome"
 
 Var
-// Seção de Declarações das variáveis 
+
    nome: caractere
    sobrenome: caractere
    idade: inteiro
    ano_nascimento: inteiro
    ano_atual: inteiro
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+ 
   ESCREVAL ("Digite seu nome: ")
   LEIA (nome)
   ESCREVAL (" ")
@@ -34,12 +34,12 @@ Calculadora de soma:
 Algoritmo "semnome"
 
 Var
-// Seção de Declarações das variáveis 
+ 
    num1: inteiro
    num2: inteiro
    soma: inteiro
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+ 
   ESCREVAL ("Digite o 1° número:")
   LEIA (num1)
   ESCREVAL (" ")
@@ -58,13 +58,13 @@ Calculadora de média:
 Algoritmo "semnome"
 
 Var
-// Seção de Declarações das variáveis 
+ 
    num1: inteiro
    num2: inteiro
    num3: inteiro
    media: real
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+
   ESCREVAL ("Digite o 1° número:")
   LEIA (num1)
   ESCREVAL (" ")
@@ -85,12 +85,12 @@ Maior e menor de idade:
 Algoritmo "semnome"
 
 Var
-// Seção de Declarações das variáveis 
+
    idade: inteiro
    resultado: inteiro
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+
   ESCREVAL ("Qual sua idade?")
   LEIA (idade)
   ESCREVAL (" ")
