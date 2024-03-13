@@ -280,3 +280,78 @@ escreval ("IRRF:", irrf)
 escreval ("INSS:", inss)
 
 Fimalgoritmo
+
+Calculadora IPVA:
+
+Algoritmo "semnome"
+
+Var
+opcao: inteiro
+ipva: real
+valor: real
+anoatual: inteiro
+anofabri: inteiro
+idadecar: inteiro
+
+Inicio
+escreval ("Qual o valor do seu veículo")
+leia (valor)
+escreval ("Qual o ano de fabricação do seu veículo?")
+leia (anofabri)
+escreval ("Qual o ano atual?")
+leia (anoatual)
+idadecar <- anoatual - anofabri
+
+
+
+escreval ("Qual o modelo do seu veículo?")
+escreval ("1- Carro flex")
+escreval ("2- Carro elétrico")
+escreval ("3- Carro gnv")
+escreval ("4- Moto")
+leia (opcao)
+
+ESCOLHA opcao
+CASO 1
+SE (idadecar < 20) ENTAO
+ipva <- valor * 0.04
+SENAO
+ipva <- 0
+FIMSE
+escreval ("O valor do ipva do seu veículo é R$", ipva)
+
+
+CASO 2
+SE (idadecar < 20) ENTAO
+ipva <- valor * 0.05
+SENAO
+ipva <- 0
+FIMSE
+escreval ("O valor do ipva do seu veículo é R$", ipva)
+
+
+CASO 3
+SE (idadecar < 20) ENTAO
+ipva <- valor * 0.015
+SENAO
+ipva <- 0
+FIMSE
+escreval ("O valor do ipva do seu veículo é R$", ipva)
+
+
+CASO 4
+SE (idadecar < 20) ENTAO
+ipva <- valor * 0.02
+SENAO
+ipva <- 0
+FIMSE
+escreval ("O valor do ipva do seu veículo é R$", ipva)
+
+
+outrocaso
+escreval("digite um numero válido")
+
+FIMESCOLHA
+
+
+Fimalgoritmo
