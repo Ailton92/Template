@@ -355,3 +355,48 @@ FIMESCOLHA
 
 
 Fimalgoritmo
+
+=============================================================================================================================
+
+Calculadora idades homens e mulheres:
+
+Algoritmo "semnome"
+Var
+
+x: inteiro
+nome: caractere
+idade: inteiro
+totalM: inteiro
+totalF: inteiro
+sexo: inteiro
+
+Inicio
+
+Para x de 1 ate 6 faca
+  escreval ("Qual seu nome?")
+  leia (nome)
+  escreval ("")
+  escreval ("Qual sua idade")
+  leia (idade)
+  escreval ("")
+  escreval ("Qual seu gênero?")
+  escreval ("1- Masculino")
+  escreval ("2- Feminino")
+  leia (sexo)
+SE (sexo = 1) ENTAO
+    totalM <- totalM + idade
+SENAO
+    totalF <- totalF + idade
+FIMSE
+     SE (sexo > 2) ENTAO
+     escreval ("Digite um número válido")
+     FIMSE
+  escreval ("")
+  escreval (x,"°)", " Nome: ", nome)
+  escreval ("Idade:", idade)
+  escreval ("")
+Fimpara
+
+  escreval ("Total das idades dos homens:", totalM)
+  escreval ("Total das idades das mulheres:", totalF)
+Fimalgoritmo
