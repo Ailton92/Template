@@ -400,3 +400,69 @@ Fimpara
   escreval ("Total das idades dos homens:", totalM)
   escreval ("Total das idades das mulheres:", totalF)
 Fimalgoritmo
+
+=============================================================================================================================
+
+Calculadora idades homens, mulheres, total e quantidade:
+
+Algoritmo "semnome"
+Var
+
+nome: caractere
+idade: inteiro
+totalM: inteiro
+totalF: inteiro
+sexo: inteiro
+vezesi: inteiro
+vezesm: inteiro
+vezesf: inteiro
+maioridade: inteiro
+
+Inicio
+
+maioridade <- 0
+
+Enquanto idade <> 999 faca
+
+  escreval ("")
+  escreval ("Digite sua idade ou 999 para encerrar")
+  leia (idade)
+  escreval ("")
+
+  SE(idade <> 999) ENTAO
+     escreval ("Qual seu gênero?")
+     escreval ("1- Masculino")
+     escreval ("2- Feminino")
+     leia (sexo)
+       SE (idade > maioridade) ENTAO
+          maioridade <- idade
+       FIMSE
+     SE (sexo = 1) ENTAO
+       totalM <- totalM + idade
+       vezesi <- vezesi + 1
+       vezesm <- vezesm + 1
+     SENAO
+       totalF <- totalF + idade
+       vezesi <- vezesi + 1
+       vezesf <- vezesf + 1
+     FIMSE
+  FIMSE
+
+FIMENQUANTO
+  escreval ("Idades digitadas:", vezesi)
+  escreval ("")
+  escreval ("Idades digitadas dos homens :", vezesm)
+  escreval ("Idades digitadas das mulheres :", vezesf)
+  escreval ("")
+  escreval ("Maior das idades: ", maioridade)
+  escreval ("")
+  escreval ("Total das idades dos homens:", totalM)
+  escreval ("Total das idades das mulheres:", totalF)
+Fimalgoritmo
+
+
+=============================================================================================================================
+
+
+
+=============================================================================================================================
