@@ -1,0 +1,31 @@
+Algoritmo "semnome"
+
+Var
+
+idade: inteiro
+status: caractere
+Inicio
+
+   escreval ("Qual sua idade?")
+   leia (idade)
+   escreval (" ")
+
+SE (idade < 13) ENTAO
+   status <- " Criança"
+SENAO
+  SE (idade < 18) ENTAO
+        status <- " Adolescente"
+    SENAO
+      SE (idade < 21) ENTAO
+           status <- " Jovem"
+      SENAO
+        SE (idade < 60) ENTAO
+             status <- " Adulto"
+        SENAO
+        status <- " Idoso"
+      FIMSE
+    FIMSE
+   FIMSE
+  FIMSE
+  escreval ("Status:", status)
+Fimalgoritmo
