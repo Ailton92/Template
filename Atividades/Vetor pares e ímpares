@@ -1,0 +1,73 @@
+Algoritmo "vetor"
+
+Var
+
+par: vetor[1..10] de inteiro
+indice_par: inteiro
+
+impar: vetor[1..10] de inteiro
+indice_impar: inteiro
+
+quantidade: inteiro
+numero: inteiro
+
+resposta: caractere
+ordem: caractere
+
+x: inteiro
+Inicio
+
+indice_par <- 0
+indice_impar <- 0
+
+   escreval ("Quantos números deseja digitar?")
+   leia (quantidade)
+
+PARA x de 1 ate quantidade FACA
+   escreval (" ")
+   escreval ("Digite o ", x, "º número")
+   leia (numero)
+
+  SE (numero mod 2 = 0) ENTAO
+    indice_par <- indice_par + 1
+    par[indice_par] <- numero
+
+  SENAO
+    indice_impar <- indice_impar + 1
+    impar[indice_impar] <- numero
+  FIMSE
+FIMPARA
+
+resposta <- "p"
+ordem <- "d"
+
+   escreval ("Deseja exibir os números pares ou ímpares?[p/i]")
+   leia (resposta)
+   escreval ("Na ordem digitada ou inversa?[d/i]")
+   leia (ordem)
+   
+SE (resposta = "p") ENTAO
+  SE (ordem = "d") ENTAO
+     escreval ("Números nas condições:")
+   PARA x de 1 ate indice_par FACA
+     escreval (par[x])
+   FIMPARA
+
+  SENAO
+    SE (ordem = "i") ENTAO
+     PARA x de indice_par ate 1 passo-1 faca
+      escreval (par[x])
+     FIMPARA
+SENAO
+ PARA x de 1 ate indice_impar FACA
+  escreval (impar[x])
+  SENAO
+    SE (ordem = "i") ENTAO
+     PARA x de indice_impar ate 1 passo-1 faca
+      escreval (impar[x])
+     FIMPARA
+FIMSE
+  FIMSE
+    FIMSE
+    FIMSE
+Fimalgoritmo
