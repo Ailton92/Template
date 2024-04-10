@@ -1,0 +1,34 @@
+Algoritmo "semnome"
+
+Var
+
+nota1: real
+nota2: real
+trabalho: real
+media: real
+
+Inicio
+
+   escreval ("Qual foi sua 1ª nota?")
+   leia (nota1)
+   escreval (" ")
+
+   escreval ("Qual foi sua 2ª nota?")
+   leia (nota2)
+   escreval (" ")
+
+   escreval ("E sua nota do trabalho?")
+   leia (trabalho)
+   escreval (" ")
+
+media <- (nota1 + nota2+ trabalho)/ 3
+
+SE (media >= 6) ENTAO
+   escreval ("Média do aluno:", media)
+   escreval ("Status: Aprovado")
+   
+SENAO
+   escreval ("Média do aluno:", media)
+   escreval ("Status: Reprovado")
+FIMSE
+Fimalgoritmo
