@@ -1,0 +1,69 @@
+Algoritmo "semnome"
+Var
+
+nome: vetor [1..50,1..2]  de caractere
+idade: vetor [1..50,1..2]  de inteiro
+quantidade, x: inteiro
+resposta: caractere
+Inicio
+
+escreval ("Quantos funcionários serão inscritos?")
+leia (quantidade)
+
+resposta <- "s"
+
+PARA x de 1 ate quantidade FACA
+     escreval (" ")
+     escreval ("Qual o nome do ", x, "º funcionário?")
+     leia (nome[x,1])
+     escreval (" ")
+     escreval ("Qual a idade dele?")
+     leia (idade[x,1])
+
+     escreval (" ")
+     
+     escreval ("Ele levará um acompanhante?")
+     leia (resposta)
+     LIMPATELA
+  SE (resposta = "s") ENTAO
+    escreval (" ")
+    escreval ("Qual o nome do convidado?")
+    leia (nome[x,2])
+    escreval (" ")
+    escreval ("Qual a idade do convidado?")
+    leia (idade[x,2])
+
+    escreval (" ")
+
+    escreval ("Funcionário", x,")")
+    escreval ("Nome: ", nome[x,1])
+    escreval ("Idade: ", idade[x,1])
+
+    escreval (" ")
+    
+    escreval ("Convidado: ", nome[x,2])
+    escreval ("Idade: ", idade[x,2])
+   SENAO
+      escreval ("Funcionário ", x,")")
+      escreval ("Nome: ", nome[x,1])
+      escreval ("Idade: ", idade[x,1])
+  FIMSE
+FIMPARA
+escreval (" ")
+escreval ("Escolha um funcionário de 1 a ", quantidade, " para exibir os dados")
+leia (x)
+SE (idade[x,2] > 0) ENTAO
+escreval ("Funcionário", x,")")
+    escreval ("Nome: ", nome[x,1])
+    escreval ("Idade: ", idade[x,1])
+
+    escreval (" ")
+
+    escreval ("Convidado: ", nome[x,2])
+    escreval ("Idade: ", idade[x,2])
+ SENAO
+  escreval ("Funcionário", x,":")
+    escreval ("Nome: ", nome[x,1])
+    escreval ("Idade: ", idade[x,1])
+FIMSE
+Fimalgoritmo
