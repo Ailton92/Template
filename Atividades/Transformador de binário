@@ -1,0 +1,19 @@
+Algoritmo "semnome"
+Var
+numero: inteiro
+resultado: caractere
+Inicio
+
+escreval ("Digite um número:")
+leia (numero)
+
+ENQUANTO numero > 0 FACA
+SE (numero mod 2) = 0 entao
+    resultado <- "0" + resultado
+   SENAO
+    resultado <- "1" + resultado
+FIMSE
+numero <- numero div 2
+FIMENQUANTO
+ESCREVAL ("Seu número em binário é: ", resultado)
+FIMALGORITMO
