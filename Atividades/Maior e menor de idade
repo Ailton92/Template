@@ -1,0 +1,22 @@
+Algoritmo "semnome"
+
+Var
+
+   idade: inteiro
+   resultado: inteiro
+
+Inicio
+
+  ESCREVAL ("Qual sua idade?")
+  LEIA (idade)
+  ESCREVAL (" ")
+  
+SE (idade < 18) ENTAO
+      ESCREVAL ("Idade: ", idade)
+      ESCREVAL ("Status: Menor de idade")
+SENAO
+      ESCREVAL ("Idade: ", idade)
+      ESCREVAL ("Status: Maior de idade")
+FIMSE
+
+Fimalgoritmo
