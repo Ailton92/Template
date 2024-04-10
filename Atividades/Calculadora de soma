@@ -1,0 +1,21 @@
+Algoritmo "semnome"
+
+Var
+ 
+   num1: inteiro
+   num2: inteiro
+   soma: inteiro
+Inicio
+ 
+  ESCREVAL ("Digite o 1° número:")
+  LEIA (num1)
+  ESCREVAL (" ")
+  ESCREVAL ("Digite o 2° número:")
+  LEIA (num2)
+  ESCREVAL (" ")
+  soma <- num1 + num2
+  ESCREVAL (" ")
+  ESCREVAL (" O resultado é ", soma)
+
+
+Fimalgoritmo
