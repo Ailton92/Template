@@ -1,0 +1,64 @@
+Algoritmo "semnome"
+Var
+
+time: vetor [1..5] de caractere
+gols: vetor [1..5,1..2] de inteiro
+pontos: vetor [1..5] de inteiro
+saldo: real
+x: inteiro
+
+Inicio
+
+time[1] <- "Brasil
+time[2] <- "Argentina"
+time[3] <- "Alemanha"
+time[4] <- "Inglaterra"
+time[5] <- "Japão"
+
+pontos[1] <- 9
+pontos[2] <- 9
+pontos[3] <- 7
+pontos[4] <- 5
+pontos[5] <- 0
+
+gols[1,1] <- 10
+gols[1,2] <- 2
+
+gols[2,1] <- 15
+gols[2,2] <- 8
+
+gols[3,1] <- 7
+gols[3,2] <- 1
+
+gols[4,1] <- 8
+gols[4,2] <- 10
+
+gols[5,1] <- 5
+gols[5,2] <- 11
+
+
+
+PARA x de 1 ate 5 FACA
+ escreval (" ")
+ escreval ("Seleção",x,": ", time[x])
+ escreval (" ")
+FIMPARA
+
+escreval ("Deseja exibir os dados de qual seleção?")
+leia (x)
+
+SE (x > 5) ENTAO
+  escreval (" ")
+  escreval ("Seleção não encontrada")
+ SENAO
+    saldo <- gols[x,1] - gols[x,2]
+   escreval (" ")
+   escreval ("Seleção: ", time[x])
+   escreval ("Pontos: ", pontos[x])
+   escreval ("Gols feitos: ", gols[x,1])
+   escreval ("Gols sofridos: ", gols[x,2])
+   escreval ("Saldo: ", saldo)
+FIMSE
+
+
+Fimalgoritmo
